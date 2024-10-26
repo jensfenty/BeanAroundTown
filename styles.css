@@ -1,0 +1,1532 @@
+/* Reset all common properties */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+/* Set default display for key elements */
+html, body {
+    height: 100%;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+    content: '';
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: #f2e8dc;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    padding: 20px 0;              
+}
+
+/*LOGO WITH BAR STYLES*/
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+    display: flex;               
+    justify-content: space-between; 
+    align-items: center;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center; 
+    margin-left: -250px;
+}
+
+.logo img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px; 
+}
+
+.logo h1 {
+    font-family: 'Krona One', sans-serif;
+    font-size: 20px;
+    color: #164418;
+    font-weight: 300; 
+}
+
+/*NAVIGATION BAR STYLES*/
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin-right: -200px; 
+}
+
+nav ul li {
+    margin-left: 25px; 
+}
+
+nav ul li a {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    color: #2c3e2d;
+    font-size: 15px; 
+    transition: color 0.2s ease;
+}
+
+nav ul li a:hover {
+    color: #5a7d5c;
+}
+
+nav ul li a:not(.active):hover {
+    color: #F2E9DF;
+    background-color: #906510;
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+
+/*STYLESHEET FOR BAT'S HOMEPAGE*/
+footer {
+    text-align: center;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300; /* Outfit Light */
+    color: #906510;
+    padding: 35px 0;
+    position: relative;
+    width: 100%;
+}
+
+/*STYLESHEET FOR BAT'S HOMEPAGE*/
+.home {
+    background-color: #2c3e2d;
+    color: #f2e8dc;
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+
+.home-main {
+    background-color: #1A2A0F;
+    color: #f2e8dc;
+    padding: 30px 0;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-content {
+    flex: 1;
+    padding-right: 50px;
+}
+
+h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.text-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.image-grid {
+    flex: 2.5;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 0px; 
+    justify-items: center; 
+    margin-top: -48px;
+    margin-bottom: -50px;
+    margin-right: -190px;
+    margin-left: 100px;
+    width: 100%; 
+    height: 100%; 
+}
+
+.image-grid img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    aspect-ratio: 1/1; 
+}
+
+
+.green-box {
+    width: 100%;
+    height: 280px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1A2A0F; 
+}
+
+.cursive-text {
+    font-family: 'Pinyon Script', cursive;
+    font-weight: normal;
+    font-size: 48px; 
+    margin-left: -5vw;
+    color:#F2E9DF;
+}
+
+
+.spaced-text {
+    letter-spacing: 5%; 
+    line-height: 20px; 
+}
+
+
+.outfit-regular {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400; 
+    line-height: 20px; 
+}
+
+
+.outfit-light {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300; 
+    line-height: 20px; 
+}
+
+.arrow {
+    font-size: 24px; 
+    margin-left: 40px; 
+    color: inherit;
+    display: inline-block;
+    transform: scaleX(3); 
+    padding-left: 90px; 
+}
+
+/*STYLESHEET FOR BAT'S FAQ PAGE*/
+.faq {
+    background-color: #2c3e2d;
+    color: #f2e8dc;
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+
+.main-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.sidebar {
+    width: 25%;
+    margin-right: 20px;
+    margin-left: 125px;
+    padding: 20px;
+}
+
+.parent {
+    position: relative;
+}
+
+h2 {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+    color: #1A2A0F;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1.2;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    font-size: 16px;
+    border-radius: 12px;
+    background-color: rgba(144, 101, 16, 0.1);
+    border: none;
+}
+
+.button-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.form-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: rgba(144, 101, 16, 0.1);
+    border-radius: 12px;
+    border: none;
+    color: #2c3e2d;
+}
+
+.form-button:nth-child(1) {
+    margin-right: 10px;
+}
+
+.format {
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+    resize: vertical;
+    background-color: rgba(144, 101, 16, 0.1);
+    border-radius: 12px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    background-color: #e8e1d9;
+    border: none;
+}
+
+button {
+    background-color: #e8e1d9;
+    color: #2c3e2d;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: 'Outfit', sans-serif;
+}
+
+.main-content {
+    width: 70%;
+    margin-left: 20px;
+    margin-right: 80px;
+}
+
+.overview-heading {
+    color: #8B4513;
+    margin-left: 35px;
+    margin-top: 25px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 500;
+}
+
+ol {
+    margin: 50px;
+    color: #906510;
+}
+
+ol li h3 {
+    margin-top: 20px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    color: #906510;
+}
+
+ol li p:first-of-type {
+    margin-top: 9px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+    color: #906510;
+}
+
+.custom-line {
+    border: none;
+    height: 1.1px;
+    background-color: #906510;
+    width: 90%;
+    position: relative;
+    margin: 20px auto;
+    z-index: 10;
+}
+
+.aso {
+    margin-top: 20px;
+    min-height: 1px;
+    text-align: center;
+}
+
+.cf {
+    margin-top: 20px;
+    width: 300px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.centered-paragraph {
+    text-align: center;
+    margin: 20px auto;
+    font-size: 1.2em;
+    color: #1A2A0F;
+    max-width: 800px;
+    line-height: 1.5;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 500;
+}
+
+table {
+    width: 90%;
+    max-width: 1200px;
+    border-collapse: collapse;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+}
+
+th, td {
+    border: 1px solid #906510;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+}
+
+th {
+    background-color: #906510;
+    color: #f2e8dc;
+}
+
+
+/*STYLESHEET FOR BAT'S ABOUT PAGE*/
+.about {
+    background-color: #2c3e2d;
+    color: #f2e8dc;
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+
+.about-body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.about-main {
+    background-color: #1A2A0F;
+    color: #fff;
+    padding: 50px 15px;
+    display: flex;
+    align-items: flex-start; /* Align items to the start */
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: 800px;
+    overflow: hidden;
+}
+
+#videoContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#videoContainer video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    color: #F2E9DF;
+}
+
+.video-text {
+    position: absolute;
+    bottom: 150px;
+    width: 100%;
+    text-align: center;
+    color: #F2E9DF;
+}
+
+.outfit-text {
+    font-family: 'Outfit', sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.pinyon-text { 
+    font-family: 'Pinyon Script', cursive;
+    font-weight: normal;
+    display: inline-block;
+    position: relative;
+    font-size: 70px;
+    top: 30px;
+}
+
+.about-footer {
+    color: #906510;
+    text-align: center;
+
+}
+
+.about-content {
+    flex: 1; /* Takes remaining space */
+    padding: 0 20px; /* Padding */
+    color: #f2e8dc; /* Text color */
+    border-radius: 20px; /* Rounded corners */
+    display: flex; /* Flex display */
+    flex-direction: column; /* Column direction */
+    justify-content: flex-start; /* Align content at the start */
+    margin-left: auto; /* Pushes the content to the right */
+    max-width: 60%; /* Optional maximum width */
+    position: relative; /* For positioning child elements if needed */
+    z-index: 1; /* Stack above video */
+}
+
+.about-section {
+    display: flex;
+    justify-content: flex-start; /* Align items to the start */
+    margin: 20px 0; /* Space between sections */
+}
+
+.about-grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 20px; /* Adjusted gap between grid items */
+    width: 100%; /* Ensure it uses the full width of the parent */
+    margin-top: 20px; /* Adjusted margin to place it nicely */
+}
+
+.about-text-block {
+    padding: 20px; /* Padding for text blocks */
+    border-radius: 8px;
+    font-family: 'Outfit', sans-serif;
+    /* Blackish green with 50% opacity */
+ /* Dark forest green with 60% opacity */
+/* Dark gray with very slight transparency */
+ /* Optional background color for better visibility */
+}
+
+.about-text-block h2 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 28px;
+    color: #CDB991;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.about-text-block p {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.3;
+    color: #F2E9DF;
+}
+
+.about-text-block h2,
+.about-text-block p {
+    text-align: left;
+}
+
+.contact-section {
+    text-align: center;
+    color: #dac9a7;
+    padding: 20px 0;
+    margin-top: 30px;
+}
+
+.contact-section h2 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    color: #CDB991;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    margin-bottom: 20px;
+}
+
+.phone-number,
+.email {
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px;
+    font-weight: 200;
+    color: #F2E9DF;
+    padding: 10px;
+    background-color: #3f4b30;
+    border-radius: 5px;
+    display: inline-block; /* Make the background fit the text */
+}
+
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+
+/*STYLESHEET FOR SPOTS PAGE*/ 
+.spots-header {
+    background-color: #1A2A0F;
+    padding: 20px 0;              
+}
+.spots-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1A2A0F;
+    padding: 1rem;
+}
+.spotss {
+    font-family: 'Krona One', sans-serif;
+    color: #F2E9DF;
+    font-size: 2rem;
+    margin-right: -60;
+}
+.spots-main {
+    background-color: #1A2A0F;
+    padding: 80px 0;
+}
+.spots-hero {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+    width: 1220px;
+    margin-bottom: 2rem;
+    margin-left: 10vw;
+}
+.spots-hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.spots-hero-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+.spots-hero-text h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+.spots-hero-text p {
+    font-size: 2.5rem;
+    font-family: 'Brush Script MT', cursive;
+    margin: 0;
+}
+.spots-coffee-shops {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem 0;
+}
+.spots-shop {
+    text-align: center;
+    flex: 1;
+}
+.spots-number {
+    font-size: 110px;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    font-family: 'Outfit', sans-serif;
+    color: #CDB991;
+    margin-top: -20px;
+}
+.spots-h3 {
+    margin-bottom: 10px;
+    font-size: 25px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+    color: #F2E9DF;
+    margin-top: -25px;
+}
+.spots-buttons {
+    background-color: #F2E9DF;
+    color: #1A2A0F;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 16px;
+    cursor: pointer;
+    font-family: 'Outfit', sans-serif;
+    margin-top: -5px;
+}
+.coffee-details {
+    background-color: #F2E9DF;
+    padding: 5rem;
+    margin: 5rem 0;
+    width: 100%;
+}
+.coffee-details1 {
+    background-color: #1a2e1a;
+    padding: 5rem;
+    width: 100%;
+}
+.coffee-item {
+    display: flex;
+    margin-bottom: 2rem;
+    position: relative;
+    align-items: center;
+}
+.coffee-image {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+}
+.coffee-info {
+    padding-left: 2rem;
+    flex: 1;
+}
+.coffee-info1 {
+    padding-left: 2rem;
+    flex: 1;
+}
+.coffee-name {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color:  #1a2e1a;
+}
+.coffee-description {
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+.coffee-location {
+    font-size: 0.9rem;
+    margin-top: 5rem;
+    color: #1a2e1a;
+}
+.coffee-number {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 4rem;
+    font-weight: bold;
+    color: #1a2e1a;
+}
+.cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cont p {
+    margin: 20;
+    color:  #ffffff;
+}
+.spots-home {
+    color: #F2E9DF;
+}
+.spots-spots {
+    background-color: #F2E9DF;
+    color: #1a2e1a;
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+.spots-faq {
+    color: #F2E9DF;
+}
+.spots-about {
+    color: #F2E9DF;
+}
+.spots-spots:hover {
+    color: #906510;
+    background-color: #F2E9DF;
+}
+.spots-logo-header {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+.spots-logo {
+    margin-left: 120px; 
+    width: 60px;
+    margin-top: 20px; 
+    height: auto;
+}
+.coffee-name {
+    font-family: 'Pinyon Script', cursive;
+    font-weight: 300;
+    color: #1A2A0F;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+.coffee-name1 {
+    font-family: 'Pinyon Script', cursive;
+    font-weight: 300;
+    color: #F2E9DF;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+.coffee-description {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: #906510;
+}
+.coffee-location {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    font-size: 0.85rem;
+    line-height: 1.4;
+    color: #1A2A0F;
+    margin-top: 5rem;
+}
+.coffee-description1 {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: #F2E9DF;
+}
+.coffee-location1 {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    font-size: 0.85rem;
+    line-height: 1.4;
+    color: #F2E9DF;
+    margin-top: 5rem;
+}
+.coffee-image {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    margin-left: 20px;
+}
+.coffee-number {
+    font-family: 'Outfit', sans-serif;
+    font-weight: bold;
+    font-size: 6rem;
+    color: #1A2A0F;
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+}
+.coffee-number1 {
+    font-family: 'Outfit', sans-serif;
+    font-weight: bold;
+    font-size: 6rem;
+    color: #F2E9DF;
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+}
+.coffee-info {
+    padding-left: 2rem;
+    width: 90%;
+    max-width: 800px;
+}
+.spots-logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: -250px;
+}
+.spots-logo .spotss {
+    font-family: 'Krona One', sans-serif;
+    font-weight: 300;
+    font-size:20px;
+    white-space: nowrap;
+    margin-left: 10px;
+    color: #F2E9DF;
+}
+.spots-hero {
+    position: relative;
+    overflow: hidden;
+    margin-left: calc(-50vw + 50%);
+    width: 100vw;
+}
+.spots-mainimage {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #F2E9DF;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+}
+.hero-text h2 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 2rem;
+    margin: 0;
+    color: #F2E9DF; 
+    white-space: nowrap;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+.hero-text h2 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 2rem;
+    margin: 0;
+    color: #F2E9DF; 
+    white-space: nowrap;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+.hero-text p {
+    font-family: 'Pinyon Script', cursive;
+    font-size: 50px;
+    margin: 0;
+    color: #F2E9DF;
+    margin-left: 10px;
+    align-self: flex-end;
+    transform: translateY(5px); 
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); 
+}
+.spots-footer { 
+    margin-top: 20px; 
+    padding: 20px 0; 
+}
+
+/* HAMBURGER MENU*/
+
+.hamburger {display: none;
+cursor:pointer}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #906510;
+}
+
+
+
+/* Media Queries */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    .logo {
+        margin-left: 0;
+    }
+
+    .logo img {
+        width: 40px;
+    }
+
+    .logo h1 {
+        font-size: 18px;
+    }
+
+    nav ul {
+        flex-direction: row;
+        margin-right: 0;
+        margin-top: 10px;
+        align-items: center;
+        gap: 10px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+
+    .home-main {
+        padding: 50px 10px;
+        height: 855px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text-content p {
+        font-size: 16px;
+    }
+
+    .cursive-text {
+        font-size: 50px;
+    }
+
+    .outfit-regular {
+        font-size: 22px;
+    }
+
+    .outfit-light {
+        font-size: 20px;
+    }
+
+    .arrow {
+        margin-top: 5px;
+    }
+
+    .image-grid {
+        grid-template-columns: repeat(2, 1fr);
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .image-grid img {
+        width: 100%;
+        height: auto;
+    }
+
+    .coffee-item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .coffee-image {
+        width: 380px;
+        height: auto;
+    }
+
+    .coffee-info {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .main-content {
+        width: 100%;
+        margin: 0;
+    }
+
+    .coffee-number,
+    .coffee-number1 {
+        display: none;
+    }
+
+    .hero-text h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero-text p {
+        font-size: 36px;
+    }
+
+    .image-grid img {
+        display: none;
+    }
+
+    .spots-number {
+        font-size: 100px;
+    }
+
+    .spots-h3 {
+        font-size: 20px;
+    }
+
+    .spots-buttons {
+        font-size: 10px;
+    }
+
+    .sidebar {
+        flex: 1;
+        padding: 0 20px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 10px;
+        margin-top: 20px;
+        max-width: 800px;
+    }
+
+    .about-main {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        min-height: 750px;
+        padding-top: 10px;
+    }
+    
+
+    .cf {
+        display: none;
+    }
+
+    #videoContainer {
+        display: none;
+    }
+
+    video,
+    .video-text {
+        display: none;
+    }
+
+    .about-content {
+        max-width: 100%;
+        margin-top: -20px !important; /* Moves content up by 20px */
+        padding-bottom: 20px;
+    }
+    
+
+    .about-section {
+        margin: 0 0;
+    }
+
+    .about-grid-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .about-text-block {
+        padding: 15px;
+    }
+
+    .about-text-block h2 {
+        font-size: 20px;
+    }
+
+    .about-text-block p {
+        font-size: 14px;
+    }
+
+    .contact-section {
+        padding: 15px 0;
+    }
+
+    .contact-section h2 {
+        font-size: 20px;
+    }
+
+    .phone-number,
+    .email {
+        font-size: 12px;
+    }
+
+    .about-footer {
+        position: relative;
+        margin-top: 0; /* Remove if already set, or adjust to fit */
+        width: 100%;
+        clear: both; /* Ensures no floats affect positioning */
+    }
+}
+
+
+
+
+/* Large Desktop Devices (min-width: 1200px) */
+@media (min-width: 1200px) {
+    .container {
+        padding: 0 40px; /* Ensure full padding */
+    }
+
+    .logo {
+        margin-left: -250px; /* Original logo margin */
+    }
+
+    .logo img {
+        width: 50px; /* Original logo size */
+    }
+
+    .logo h1 {
+        font-size: 20px; /* Original title size */
+    }
+
+    nav ul {
+        margin-right: -200px; /* Original nav margin */
+    }
+
+    .home-main {
+        padding: 30px 0; /* Original padding */
+    }
+
+  
+
+    .text-content p {
+        font-size: 18px; /* Original paragraph font size */
+    }
+
+   
+
+    .coffee-item {
+        flex-direction: row; /* Original layout */
+    }
+
+    .coffee-image {
+        width: 400px; /* Original image size */
+    }
+
+    .main-content {
+        width: 70%; /* Original main content width */
+    }
+
+  
+    .hero-text h2 {
+        font-size: 2rem; /* Original hero text size */
+    }
+
+    .hero-text p {
+        font-size: 50px; /* Original hero paragraph size */
+    }
+    
+}
+
+
+@media (max-width: 767px) {
+    .container {
+        padding: 40px 10px; /* Smaller padding for mobile */
+        max-width: 100%; /* Ensure full width for mobile */
+        margin: 0 auto; /* Center the container */
+        box-sizing: border-box; /* Include padding in width calculations */
+    }
+    header {
+        padding: 00px 0; /* Reduce top and bottom padding */
+        height: 115px; /* Allow height to fit content */
+    }
+
+    .logo {
+        margin-left: 0;
+        display: flex;
+        justify-content: center; /* Center-align logo */
+    }
+
+    .logo img {
+       display: none;/* Smaller logo size */
+    }
+
+    .spots-logo .spotss {
+        font-size: 12px; /* Smaller font for logo text */
+        text-align: center;
+        display: inline-block; /* Allows stacking of words */
+        margin: 1px; /* Remove margin for better alignment */
+        margin-left: 150px; /* Negative margin to move text even more to the left */
+        margin-top: -10px; /* Use a negative margin to move it higher */
+    }
+    
+    
+    
+    
+    .logo h1 {
+        font-size: 12px; /* Smaller font for logo text */
+        text-align: center;
+        display: inline-block; /* Allows stacking of words */
+        margin: 0; /* Remove margin for better alignment */
+        margin-left: 20px;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        margin-top: px;
+    }
+
+    nav ul li a {
+        font-size: 12px; /* Smaller font for nav links */
+    }
+
+    footer p {
+        font-size: 10px; /* Adjust the font size */
+        color: #1A2A0F; /* Change the text color */
+        text-align: center; /* Center the text */
+         /* Adjust margin as needed */
+    }
+    
+
+    .home-main {
+        padding: 30px 10px;
+        height: auto; /* Auto height to fit content */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text-content p {
+        font-size: 14px; /* Smaller font size */
+        line-height: 1.4; /* Adjusted line-height for readability */
+    }
+
+    .cursive-text {
+        font-size: 36px; /* Reduced size for cursive text */
+    }
+
+    .outfit-regular {
+        font-size: 18px; /* Reduced size for regular text */
+    }
+
+    .outfit-light {
+        font-size: 16px; /* Reduced size for light text */
+    }
+
+    .arrow {
+        margin-top: -5px;
+        margin-left: -30px;
+    }
+    .image-grid img {
+        display: none;
+    }
+
+    .coffee-number, .coffee-number1 {
+        display: none;
+    }
+    
+    .coffee-item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .coffee-image {
+        width: 100%; /* Full width for mobile */
+        max-width: 300px; /* Cap max width */
+        height: auto;
+        display: block; /* Ensures the image is treated as a block element */
+        margin: 0 auto; /* Center the image horizontally */
+    }
+
+    .coffee-info {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .main-content {
+        width: 100%; /* Full width for main content */
+        margin: 20px 0;
+    }
+
+    
+    .hero-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center-aligns text horizontally */
+        text-align: center; /* Centers text within the container */
+        padding: 0 10px; /* Adds some padding for better readability */
+    }
+
+    .hero-text h2 {
+        font-size: 1rem; /* Smaller font for hero heading */
+        margin-bottom: 8px; /* Add some spacing below the heading */
+    }
+
+    .hero-text p {
+        font-size: 30px; /* Smaller font for hero paragraph */
+        line-height: 1.3; /* Adjust line height for readability */
+    }
+
+    .spots-number {
+        font-size: 55px; /* Smaller font for spots number */
+        margin-bottom: 8px; /* Add space below number */
+    }
+
+    .spots-h3 {
+        font-size: 10px; /* Smaller font for spots headings */
+        margin-top: 8px; /* Optional: adds space above heading */
+    }
+
+    .spots-buttons {
+        font-size: 8px; /* Smaller font for buttons */
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .about-main {
+        padding: 90px 20px;
+        min-height: 700px; /* Auto height to fit content */
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .about-content {
+        max-width: 100%; /* Full width */
+    }
+
+    .about-section {
+        margin: -30px 0;
+    }
+
+    .about-grid-container {
+        grid-template-columns: 1fr; /* Single column on mobile */
+    }
+
+    .about-text-block {
+        padding: 10px;
+    }
+
+    .about-text-block h2 {
+        font-size: 15px; /* Smaller heading font */
+    }
+
+    .about-text-block p {
+        font-size: 12px; /* Smaller paragraph font */
+    }
+
+    .contact-section {
+        padding: 10px 0;
+    }
+
+    .contact-section h2 {
+        font-size: 18px; /* Smaller contact section heading */
+    }
+
+    .phone-number,
+    .email {
+        font-size: 10px; /* Smaller contact info font */
+    }
+
+    .table-container {  /* Add a class for the table's parent container */
+        display: flex; /* Use flexbox for centering */
+        justify-content: center; /* Center the table horizontally */
+        width: 100%; /* Full width for the container */
+    }
+
+    table {
+        width: 90%; /* Set width to 90% for better centering */
+        max-width: 600px; /* Optional: cap the maximum width */
+        border-collapse: collapse; /* Remove space between borders */
+        overflow-x: auto; /* Allow horizontal scrolling if needed */
+        display: block; /* Makes the table responsive */
+    }
+
+    th, td {
+        padding: 8px; /* Add padding for better readability */
+        text-align: left; /* Align text to the left */
+        font-size: 12px; /* Adjust font size for better mobile viewing */
+        color: #1A2A0F;
+    }
+
+    th {
+        background-color: #f2e9df; /* Optional: add a background color to header */
+    }
+
+    tr {
+        border-bottom: 1px solid #ddd; /* Optional: add a border to rows for separation */
+    }
+
+    .centered-paragraph p {
+        /* Your styles here */
+        font-size: 14px; /* Example: adjust font size */
+        text-align: center; /* Center-align text */
+        color: #1A2A0F; /* Example: change text color */
+        margin: 10px 30px; /* Adjust margin */
+    }
+
+    #videoContainer {
+        display: none;}
+
+        .about-footer {
+            padding: 1; /* Removes all padding */
+        }
+    
+    .hamburger  {display: block;
+        position: relative; /* Ensure this can also be layered */
+        z-index: 1000; /* Higher than nav-menu.active to ensure it's on top */
+        cursor: pointer;}
+        
+
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 3%;
+        gap: 0;
+        flex-direction: column;
+        background-color: #E0C9AF;
+        width: 100%;
+        text-align: center;
+        transition: 0.4s;
+    }
+
+    .nav-item{
+        margin: 16px 0;
+    }
+
+
+    .nav-menu.active{
+        left: 0;
+        padding-top: 10px; /* Add padding to the top */
+        margin-top: 10px;
+        padding-bottom: 10px; /* Optional: add margin to create space */
+        z-index: 1000;
+    }
+
+    .hamburger .bar {
+        display: block; /* Ensure bars are block elements */
+        height: 3px; /* Height of each bar */
+        width: 25px; /* Width of each bar */
+        background-color: #D2B06D; /* Change to desired color */
+        margin: 4px auto; /* Center the bars */
+        transition: 0.4s; /* Smooth transition */
+    }
+    
+
+    .spots-home, .spots-faq, .spots-about {
+        color:#164418;
+    }
+
+    .spots-spots {
+        background-color: #164418;
+        color: #F2E9DF;
+    }
+
+}
+
+

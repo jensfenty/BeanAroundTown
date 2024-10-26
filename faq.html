@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bean Around Town</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Outfit:wght@100..900&family=Pinyon+Script&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/whitelogo.png" alt="Bean Around Town Logo" class="logo-image">
+                <h1 class="logo-text">BEAN AROUND TOWN</h1>
+            </div>
+            <nav class="navbar">
+                <nav class="navbar" >
+                <ul class="nav-menu">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="spots.html">SPOTS</a></li>
+                    <li><a href="faq.html" class="faq">FAQ</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Updated main-container to include both sidebar and main-content -->
+    <div class="main-container">
+        <div class="sidebar">
+            <h2>HAVE MORE QUESTIONS? <br>LEAVE THEM HERE:</h2>
+            <form>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" class="form-input" required><br>
+                
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" class="form-input" required><br>
+                
+                <label for="question">Ask a Question:</label><br>
+                <textarea id="question" name="question" rows="4" class="format"></textarea><br>
+                
+                <div class="button-container">
+                    <button type="button" onclick="resetForm()" class="form-button">RESET</button>
+                    <button type="submit" class="form-button">SUBMIT</button>
+                </div>
+            </form>
+            
+            <div class="coffee-character">
+                <img src="images/whitelogo.png" alt="Coffee cup character" width="150" class="cf">
+            </div>
+        </div>
+
+        <!-- Main content is now in the same container -->
+        <div class="main-content">
+            <h2 class="overview-heading">OVERVIEW</h2>
+            <ol>
+                <li>
+                    <h3>HOW DO YOU CHOOSE THE COFFEE SHOPS FEATURED ON YOUR SITE?</h3>
+                    <p>Answer: We personally visit each coffee shop to evaluate the quality of their coffee, the atmosphere, and the overall experience they provide. Our goal is to feature the best spots for coffee lovers in town.</p>
+                </li>
+                <li>
+                    <h3>CAN I SUGGEST A COFFEE SHOP TO BE FEATURED?</h3>
+                    <p>Answer: We love discovering new coffee shops and are always open to suggestions. Head over to our 'About' section for details on how to get in touch with us.</p>
+                </li>
+                <li>
+                    <h3>DO YOU OFFER REVIEWS OR JUST RECOMMENDATIONS?</h3>
+                    <p>Answer: We provide both recommendations and brief reviews of our experiences, focusing on what makes each coffee shop unique. We aim to offer honest, balanced information to help you choose the perfect spot for your next coffee break.</p>
+                </li>
+                <li>
+                    <h3>HOW OFTEN DO YOU UPDATE THE LIST OF COFFEE SHOPS?</h3>
+                    <p>Answer: We strive to keep our content fresh and up-to-date. We add new coffee shops and update existing listings regularly, especially when we receive new information or there are changes you'd love to know about.</p>
+                </li>
+                <li>
+                    <h3>HOW TO GET INVOLVED?</h3>
+                    <p>Answer: Love a coffee spot that we should feature? Have a suggestion for improving our site? We'd love to hear from you! Reach out to us and let us know your favorite local coffee!</p>
+                </li>
+                <li>
+                    <h3>DO THE COFFEE SHOPS HAVE FREE WI-FI AND POWER OUTLETS?</h3>
+                    <p>Answer: Yes, most of the coffee shops we feature offer free Wi-Fi and have power outlets available for customers.</p>
+                </li>
+            </ol>
+        </div>
+    </div>
+
+    <hr class="custom-line">
+
+            
+    <div class="aso">
+        <p></p>
+    </div>
+
+    <div class="centered-paragraph">
+        <p>And For Your Convenience, We've Included A Comparison Of Some Of The Best Coffee Shops To Help You Find The Perfect Spot That Matches Your Vibe And Budget!</p>
+    </div>
+    
+    <table>
+        <tr>
+            <th>COFFEE SHOP</th>
+            <th>WIFI</th>
+            <th>POWER OUTLETS</th>
+            <th>PRICE RANGE</th>
+            <th>AMBIANCE</th>
+        </tr>
+        <tr>
+            <td>Jungle Base</td>
+            <td>No</td>
+            <td>Yes</td>
+            <td>₱120 - ₱210</td>
+            <td>Outdoor & Natural</td>
+        </tr>
+        <tr>
+            <td>Poblacion</td>
+            <td>Yes</td>
+            <td>Limited</td>
+            <td>₱100 - ₱200</td>
+            <td>Rustic & Homey</td>
+        </tr>
+        <tr>
+            <td>Hygge</td>
+            <td>Yes</td>
+            <td>Limited</td>
+            <td>₱120 - ₱250</td>
+            <td>Minimalist & Cozy</td>
+        </tr>
+        <tr>
+            <td>Moon Cafe</td>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td>₱120 - ₱300</td>
+            <td>Artsy & Chic</td>
+        </tr>
+    </table>
+</div>
+</div>
+
+
+    <footer>
+        <p>&copy; 2024 Bean Around Town. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
