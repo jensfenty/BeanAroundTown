@@ -11,7 +11,7 @@
     vertical-align: baseline;
 }
 
-/* Set default display for key elements */
+/* DEFAULT FOR KEY ELEMS */
 html, body {
     height: 100%;
 }
@@ -504,41 +504,37 @@ th {
 }
 
 .about-content {
-    flex: 1; /* Takes remaining space */
-    padding: 0 20px; /* Padding */
-    color: #f2e8dc; /* Text color */
-    border-radius: 20px; /* Rounded corners */
-    display: flex; /* Flex display */
-    flex-direction: column; /* Column direction */
-    justify-content: flex-start; /* Align content at the start */
-    margin-left: auto; /* Pushes the content to the right */
-    max-width: 60%; /* Optional maximum width */
-    position: relative; /* For positioning child elements if needed */
-    z-index: 1; /* Stack above video */
+    flex: 1; 
+    padding: 0 20px; 
+    color: #f2e8dc; 
+    border-radius: 20px; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: flex-start; 
+    margin-left: auto; 
+    max-width: 60%; 
+    position: relative; 
+    z-index: 1; 
 }
 
 .about-section {
     display: flex;
-    justify-content: flex-start; /* Align items to the start */
-    margin: 20px 0; /* Space between sections */
+    justify-content: flex-start;
+    margin: 20px 0;
 }
 
 .about-grid-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two columns */
-    gap: 20px; /* Adjusted gap between grid items */
-    width: 100%; /* Ensure it uses the full width of the parent */
-    margin-top: 20px; /* Adjusted margin to place it nicely */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 100%;
+    margin-top: 20px;
 }
 
 .about-text-block {
-    padding: 20px; /* Padding for text blocks */
+    padding: 20px;
     border-radius: 8px;
     font-family: 'Outfit', sans-serif;
-    /* Blackish green with 50% opacity */
- /* Dark forest green with 60% opacity */
-/* Dark gray with very slight transparency */
- /* Optional background color for better visibility */
 }
 
 .about-text-block h2 {
@@ -590,8 +586,9 @@ th {
     padding: 10px;
     background-color: #3f4b30;
     border-radius: 5px;
-    display: inline-block; /* Make the background fit the text */
+    display: inline-block;
 }
+
 
 
 .social-media {
@@ -1111,7 +1108,7 @@ cursor:pointer}
 
     .about-content {
         max-width: 100%;
-        margin-top: -20px !important; /* Moves content up by 20px */
+        margin-top: -20px !important; 
         padding-bottom: 20px;
     }
     
@@ -1151,9 +1148,9 @@ cursor:pointer}
 
     .about-footer {
         position: relative;
-        margin-top: 0; /* Remove if already set, or adjust to fit */
+        margin-top: 0; 
         width: 100%;
-        clear: both; /* Ensures no floats affect positioning */
+        clear: both; 
     }
 }
 
@@ -1163,100 +1160,92 @@ cursor:pointer}
 /* Large Desktop Devices (min-width: 1200px) */
 @media (min-width: 1200px) {
     .container {
-        padding: 0 40px; /* Ensure full padding */
+        padding: 0 40px;
     }
 
     .logo {
-        margin-left: -250px; /* Original logo margin */
+        margin-left: -250px;
     }
 
     .logo img {
-        width: 50px; /* Original logo size */
+        width: 50px;
     }
 
     .logo h1 {
-        font-size: 20px; /* Original title size */
+        font-size: 20px;
     }
 
     nav ul {
-        margin-right: -200px; /* Original nav margin */
+        margin-right: -200px;
     }
 
     .home-main {
-        padding: 30px 0; /* Original padding */
+        padding: 30px 0;
     }
-
-  
 
     .text-content p {
-        font-size: 18px; /* Original paragraph font size */
+        font-size: 18px;
     }
 
-   
-
     .coffee-item {
-        flex-direction: row; /* Original layout */
+        flex-direction: row;
     }
 
     .coffee-image {
-        width: 400px; /* Original image size */
+        width: 400px;
     }
 
     .main-content {
-        width: 70%; /* Original main content width */
+        width: 70%;
     }
 
-  
     .hero-text h2 {
-        font-size: 2rem; /* Original hero text size */
+        font-size: 2rem;
     }
 
     .hero-text p {
-        font-size: 50px; /* Original hero paragraph size */
+        font-size: 50px;
     }
-    
 }
+
 
 
 @media (max-width: 767px) {
     .container {
-        padding: 40px 10px; /* Smaller padding for mobile */
-        max-width: 100%; /* Ensure full width for mobile */
-        margin: 0 auto; /* Center the container */
-        box-sizing: border-box; /* Include padding in width calculations */
+        padding: 40px 10px;
+        max-width: 100%;
+        margin: 0 auto;
+        box-sizing: border-box;
     }
     header {
-        padding: 00px 0; /* Reduce top and bottom padding */
-        height: 115px; /* Allow height to fit content */
+        padding: 0px 0;
+        height: 115px;
     }
 
     .logo {
         margin-left: 0;
         display: flex;
-        justify-content: center; /* Center-align logo */
+        justify-content: center;
     }
 
     .logo img {
-       display: none;/* Smaller logo size */
+        display: none;
     }
 
     .spots-logo .spotss {
-        font-size: 12px; /* Smaller font for logo text */
+        font-size: 12px;
         text-align: center;
-        display: inline-block; /* Allows stacking of words */
-        margin: 1px; /* Remove margin for better alignment */
-        margin-left: 150px; /* Negative margin to move text even more to the left */
-        margin-top: -10px; /* Use a negative margin to move it higher */
+        display: inline-block;
+        margin: 1px;
+        margin-left: 150px;
+        margin-top: -10px;
     }
     
-    
-    
-    
     .logo h1 {
-        font-size: 12px; /* Smaller font for logo text */
+        font-size: 12px;
         text-align: center;
-        display: inline-block; /* Allows stacking of words */
-        margin: 0; /* Remove margin for better alignment */
+        display: inline-block;
+        margin: 0;
         margin-left: 20px;
     }
     
@@ -1264,24 +1253,22 @@ cursor:pointer}
         flex-direction: column;
         align-items: center;
         gap: 5px;
-        margin-top: px;
+        margin-top: 0;
     }
 
     nav ul li a {
-        font-size: 12px; /* Smaller font for nav links */
+        font-size: 12px;
     }
 
     footer p {
-        font-size: 10px; /* Adjust the font size */
-        color: #1A2A0F; /* Change the text color */
-        text-align: center; /* Center the text */
-         /* Adjust margin as needed */
+        font-size: 10px;
+        color: #1A2A0F;
+        text-align: center;
     }
-    
 
     .home-main {
         padding: 30px 10px;
-        height: auto; /* Auto height to fit content */
+        height: auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1289,26 +1276,27 @@ cursor:pointer}
     }
 
     .text-content p {
-        font-size: 14px; /* Smaller font size */
-        line-height: 1.4; /* Adjusted line-height for readability */
+        font-size: 14px;
+        line-height: 1.4;
     }
 
     .cursive-text {
-        font-size: 36px; /* Reduced size for cursive text */
+        font-size: 36px;
     }
 
     .outfit-regular {
-        font-size: 18px; /* Reduced size for regular text */
+        font-size: 18px;
     }
 
     .outfit-light {
-        font-size: 16px; /* Reduced size for light text */
+        font-size: 16px;
     }
 
     .arrow {
         margin-top: -5px;
         margin-left: -30px;
     }
+
     .image-grid img {
         display: none;
     }
@@ -1323,11 +1311,11 @@ cursor:pointer}
     }
 
     .coffee-image {
-        width: 100%; /* Full width for mobile */
-        max-width: 300px; /* Cap max width */
+        width: 100%;
+        max-width: 300px;
         height: auto;
-        display: block; /* Ensures the image is treated as a block element */
-        margin: 0 auto; /* Center the image horizontally */
+        display: block;
+        margin: 0 auto;
     }
 
     .coffee-info {
@@ -1336,41 +1324,40 @@ cursor:pointer}
     }
 
     .main-content {
-        width: 100%; /* Full width for main content */
+        width: 100%;
         margin: 20px 0;
     }
 
-    
     .hero-text {
         display: flex;
         flex-direction: column;
-        align-items: center; /* Center-aligns text horizontally */
-        text-align: center; /* Centers text within the container */
-        padding: 0 10px; /* Adds some padding for better readability */
+        align-items: center;
+        text-align: center;
+        padding: 0 10px;
     }
 
     .hero-text h2 {
-        font-size: 1rem; /* Smaller font for hero heading */
-        margin-bottom: 8px; /* Add some spacing below the heading */
+        font-size: 1rem;
+        margin-bottom: 8px;
     }
 
     .hero-text p {
-        font-size: 30px; /* Smaller font for hero paragraph */
-        line-height: 1.3; /* Adjust line height for readability */
+        font-size: 30px;
+        line-height: 1.3;
     }
 
     .spots-number {
-        font-size: 55px; /* Smaller font for spots number */
-        margin-bottom: 8px; /* Add space below number */
+        font-size: 55px;
+        margin-bottom: 8px;
     }
 
     .spots-h3 {
-        font-size: 10px; /* Smaller font for spots headings */
-        margin-top: 8px; /* Optional: adds space above heading */
+        font-size: 10px;
+        margin-top: 8px;
     }
 
     .spots-buttons {
-        font-size: 8px; /* Smaller font for buttons */
+        font-size: 8px;
     }
 
     .sidebar {
@@ -1379,13 +1366,13 @@ cursor:pointer}
 
     .about-main {
         padding: 90px 20px;
-        min-height: 700px; /* Auto height to fit content */
+        min-height: 700px;
         text-align: center;
         flex-direction: column;
     }
 
     .about-content {
-        max-width: 100%; /* Full width */
+        max-width: 100%;
     }
 
     .about-section {
@@ -1393,7 +1380,7 @@ cursor:pointer}
     }
 
     .about-grid-container {
-        grid-template-columns: 1fr; /* Single column on mobile */
+        grid-template-columns: 1fr;
     }
 
     .about-text-block {
@@ -1401,11 +1388,11 @@ cursor:pointer}
     }
 
     .about-text-block h2 {
-        font-size: 15px; /* Smaller heading font */
+        font-size: 15px;
     }
 
     .about-text-block p {
-        font-size: 12px; /* Smaller paragraph font */
+        font-size: 12px;
     }
 
     .contact-section {
@@ -1413,77 +1400,78 @@ cursor:pointer}
     }
 
     .contact-section h2 {
-        font-size: 18px; /* Smaller contact section heading */
+        font-size: 18px;
     }
 
     .phone-number,
     .email {
-        font-size: 10px; /* Smaller contact info font */
+        font-size: 10px;
     }
 
-    .table-container {  /* Add a class for the table's parent container */
-        display: flex; /* Use flexbox for centering */
-        justify-content: center; /* Center the table horizontally */
-        width: 100%; /* Full width for the container */
+    .table-container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
     }
 
     table {
-        width: 90%; /* Set width to 90% for better centering */
-        max-width: 600px; /* Optional: cap the maximum width */
-        border-collapse: collapse; /* Remove space between borders */
-        overflow-x: auto; /* Allow horizontal scrolling if needed */
-        display: block; /* Makes the table responsive */
+        width: 90%;
+        max-width: 600px;
+        border-collapse: collapse;
+        overflow-x: auto;
+        display: block;
     }
 
     th, td {
-        padding: 8px; /* Add padding for better readability */
-        text-align: left; /* Align text to the left */
-        font-size: 12px; /* Adjust font size for better mobile viewing */
+        padding: 8px;
+        text-align: left;
+        font-size: 12px;
         color: #1A2A0F;
     }
 
     th {
-        background-color: #f2e9df; /* Optional: add a background color to header */
+        background-color: #f2e9df;
     }
 
     tr {
-        border-bottom: 1px solid #ddd; /* Optional: add a border to rows for separation */
+        border-bottom: 1px solid #ddd;
     }
 
     .centered-paragraph p {
-        /* Your styles here */
-        font-size: 14px; /* Example: adjust font size */
-        text-align: center; /* Center-align text */
-        color: #1A2A0F; /* Example: change text color */
-        margin: 10px 30px; /* Adjust margin */
+        font-size: 14px;
+        text-align: center;
+        color: #1A2A0F;
+        margin: 10px 30px;
     }
 
     #videoContainer {
-        display: none;}
+        display: none;
+    }
 
-        .about-footer {
-            padding: 1; /* Removes all padding */
-        }
+    .about-footer {
+        padding: 1;
+    }
     
-    .hamburger  {display: block;
-        position: relative; /* Ensure this can also be layered */
-        z-index: 1000; /* Higher than nav-menu.active to ensure it's on top */
-        cursor: pointer;}
-        
-
-
-    .hamburger.active .bar:nth-child(2){
+    .hamburger {
+        display: block;
+        position: relative;
+        z-index: 1000;
+        cursor: pointer;
+    }
+    
+    .hamburger.active .bar:nth-child(2) {
         opacity: 0;
     }
-    .hamburger.active .bar:nth-child(1){
+
+    .hamburger.active .bar:nth-child(1) {
         transform: translateY(8px) rotate(45deg);
     }
 
-    .hamburger.active .bar:nth-child(3){
+    .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
 
-    .nav-menu{
+    .nav-menu {
         position: fixed;
         left: -100%;
         top: 3%;
@@ -1495,38 +1483,36 @@ cursor:pointer}
         transition: 0.4s;
     }
 
-    .nav-item{
+    .nav-item {
         margin: 16px 0;
     }
 
-
-    .nav-menu.active{
+    .nav-menu.active {
         left: 0;
-        padding-top: 10px; /* Add padding to the top */
+        padding-top: 10px;
         margin-top: 10px;
-        padding-bottom: 10px; /* Optional: add margin to create space */
+        padding-bottom: 10px;
         z-index: 1000;
     }
 
     .hamburger .bar {
-        display: block; /* Ensure bars are block elements */
-        height: 3px; /* Height of each bar */
-        width: 25px; /* Width of each bar */
-        background-color: #D2B06D; /* Change to desired color */
-        margin: 4px auto; /* Center the bars */
-        transition: 0.4s; /* Smooth transition */
+        display: block;
+        height: 3px;
+        width: 25px;
+        background-color: #D2B06D;
+        margin: 4px auto;
+        transition: 0.4s;
     }
     
-
     .spots-home, .spots-faq, .spots-about {
-        color:#164418;
+        color: #164418;
     }
 
     .spots-spots {
         background-color: #164418;
         color: #F2E9DF;
     }
-
 }
+
 
 
