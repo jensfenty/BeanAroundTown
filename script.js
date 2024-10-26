@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Existing hover effect for nav links
+    
     const navLinks = document.querySelectorAll('nav ul li a');
     
     navLinks.forEach(link => {
@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Hamburger menu functionality
+  
     const hamburger = document.querySelector(".hamburger");
     const navMenu = document.querySelector(".nav-menu");
 
@@ -21,14 +21,14 @@ document.addEventListener('DOMContentLoaded', function() {
         navMenu.classList.toggle("active");
     });
 
-    // Close the menu when a link is clicked
+  
     navLinks.forEach(n => n.addEventListener("click", () => {
         hamburger.classList.remove("active");
         navMenu.classList.remove("active");
     }));
 });
 
-// Reset form function remains unchanged
+
 function resetForm() {
     document.getElementById('name').value = '';
     document.getElementById('email').value = '';
